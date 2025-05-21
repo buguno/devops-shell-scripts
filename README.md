@@ -29,3 +29,25 @@ Run with:
 ```bash
 ./script.sh
 ```
+
+> You can also add them to your PATH for global use.
+
+## ✅ Requirements
+
+Most scripts are written in POSIX-compatible shell. Some may depend on:
+
+- `bash`
+- `curl`
+- `jq`
+- `awk`
+- `docker`, `kubectl`, etc. (for specific tasks)
+
+Check individual scripts for details.
+
+## 📦 Contributing
+
+Pull requests are welcome! Feel free to suggest new ideas, fix bugs, or improve the code.
+
+## 📄 License
+
+This project is licensed under the [`MIT License`](LICENSE).
