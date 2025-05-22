@@ -9,5 +9,5 @@ SOURCE_DIR="$HOME"
 mkdir -p "$DEST_DIR"
 
 # Create a backup directly in the final
-tar -czvf "$SOURCE_DIR/home_backup_$TIMESTAMP.tar.gz" -C "$DEST_DIR" .
+tar --exclude="./backups" --exclude="./.cache" -czvf "$DEST_DIR/home_backup_$TIMESTAMP.tar.gz" -C "$SOURCE_DIR" .
 echo -e "\nBackup of $SOURCE_DIR completed at $DEST_DIR/home_backup_$TIMESTAMP.tar.gz\n"
